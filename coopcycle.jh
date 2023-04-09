@@ -1,0 +1,49 @@
+entity Cooperative {
+    cooperativeName String
+}
+
+
+entity ZoneGeographique  {
+    zoneAddress String
+}
+
+entity Livreur {
+    livreurName String required unique
+    livreurID Long
+}
+
+
+entity Commercant {
+    commercantID Long required unique
+    commercantType String
+    shopUrl String
+
+}
+
+
+entity Client {
+
+    clientID Long required unique
+}
+
+entity Commande {
+    commandeID Long required unique
+    meansOfPayment Paiement required
+    deadline Instant
+    price Long
+
+}
+
+enum Paiement {
+    CB, Mastercard, Visa, Paypal, Apple Pay, GooglePay, ChequeRepas, Bitcoin, Izly
+}
+
+relationship ManyToOne {
+    Commande to ZoneGeographique
+    Livreur to Cooperative
+    Commercant to Cooperative
+    Commande to Client
+    Commande to Livreur
+    Commande to Commercant
+
+}
