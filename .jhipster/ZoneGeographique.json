@@ -1,0 +1,27 @@
+{
+  "applications": "*",
+  "changelogDate": "20230409161530",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "zone_geographique",
+  "fields": [
+    {
+      "fieldName": "zoneAddress",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ZoneGeographique",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "commande",
+      "otherEntityRelationshipName": "zoneGeographique",
+      "relationshipName": "commande",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

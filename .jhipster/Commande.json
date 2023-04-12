@@ -1,0 +1,60 @@
+{
+  "applications": "*",
+  "changelogDate": "20230409161534",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "commande",
+  "fields": [
+    {
+      "fieldName": "commandeID",
+      "fieldType": "Long",
+      "fieldValidateRules": ["required", "unique"]
+    },
+    {
+      "fieldName": "meansOfPayment",
+      "fieldType": "Paiement",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "CB,Mastercard,Visa,Paypal,Apple,Pay,GooglePay,ChequeRepas,Bitcoin,Izly"
+    },
+    {
+      "fieldName": "deadline",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "price",
+      "fieldType": "Long"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Commande",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "zoneGeographique",
+      "otherEntityRelationshipName": "commande",
+      "relationshipName": "zoneGeographique",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "client",
+      "otherEntityRelationshipName": "commande",
+      "relationshipName": "client",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "livreur",
+      "otherEntityRelationshipName": "commande",
+      "relationshipName": "livreur",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "commercant",
+      "otherEntityRelationshipName": "commande",
+      "relationshipName": "commercant",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

@@ -1,0 +1,25 @@
+{
+  "blogApp": {
+    "zoneGeographique": {
+      "home": {
+        "title": "ZoneGeographiques",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Zone Geographique",
+        "createOrEditLabel": "Créer ou éditer un Zone Geographique",
+        "notFound": "Aucun Zone Geographique trouvé"
+      },
+      "created": "Un nouveau Zone Geographique a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Zone Geographique avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Zone Geographique avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Zone Geographique {{ id }} ?"
+      },
+      "detail": {
+        "title": "Zone Geographique"
+      },
+      "id": "ID",
+      "zoneAddress": "Zone Address",
+      "commande": "Commande"
+    }
+  }
+}

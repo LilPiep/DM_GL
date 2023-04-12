@@ -1,0 +1,33 @@
+{
+  "applications": "*",
+  "changelogDate": "20230409161529",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "cooperative",
+  "fields": [
+    {
+      "fieldName": "cooperativeName",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Cooperative",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "livreur",
+      "otherEntityRelationshipName": "cooperative",
+      "relationshipName": "livreur",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "commercant",
+      "otherEntityRelationshipName": "cooperative",
+      "relationshipName": "commercant",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

@@ -1,0 +1,42 @@
+{
+  "applications": "*",
+  "changelogDate": "20230409161532",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "commercant",
+  "fields": [
+    {
+      "fieldName": "commercantID",
+      "fieldType": "Long",
+      "fieldValidateRules": ["required", "unique"]
+    },
+    {
+      "fieldName": "commercantType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "shopUrl",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Commercant",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "cooperative",
+      "otherEntityRelationshipName": "commercant",
+      "relationshipName": "cooperative",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "commande",
+      "otherEntityRelationshipName": "commercant",
+      "relationshipName": "commande",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}
