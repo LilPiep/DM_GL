@@ -12,7 +12,7 @@
 
 eureka:
   instance:
-    hostname: radiant-bayou-22977.herokuapp.com
+    hostname: mighty-garden-15669.herokuapp.com
     non-secure-port: 80
     prefer-ip-address: false
 
